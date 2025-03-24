@@ -87,7 +87,7 @@ const ProductHero = ({
           {/* Price Section */}
         <div className="mt-2 flex items-center space-x-3">
           <span className="text-2xl font-bold text-gray-900">
-            ${price.toFixed(2)}
+            R${price.toFixed(2)}
           </span>
           {originalPrice && originalPrice > price && (
             <>
