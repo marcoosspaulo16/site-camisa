@@ -30,8 +30,8 @@ const ProductHero = ({
   originalPrice = 65.00,
   colors = [
     {
-      id: "green",
-      name: "Green",
+      id: "azul",
+      name: "Azul",
       value: "#000000",
       thumbnail:
         "",
@@ -45,7 +45,7 @@ const ProductHero = ({
     },
   ],
 }: ProductHeroProps) => {
-  const [selectedColor, setSelectedColor] = useState("green");
+  const [selectedColor, setSelectedColor] = useState("azul");
 
   const handleColorChange = (colorId: string) => {
     setSelectedColor(colorId);
@@ -87,9 +87,9 @@ const ProductHero = ({
           {/* Price Section */}
         <div className="mt-2 flex items-center space-x-3">
           <span className="text-2xl font-bold text-gray-900">
-            R${price.toFixed(2)}
+            R$ {price.toFixed(2)}
           </span>
-          {originalPrice && originalPrice > price && (
+          {/* {originalPrice && originalPrice > price && (
             <>
               <span className="text-lg text-gray-500 line-through">
                 ${originalPrice.toFixed(2)}
@@ -98,7 +98,7 @@ const ProductHero = ({
                 {discount}% off
               </Badge>
             </>
-          )}
+          )} */} 
         </div>
 
           {/* Order Button */}
