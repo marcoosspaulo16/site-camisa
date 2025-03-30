@@ -7,8 +7,14 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Tempo - Modern SaaS Starter",
-  description: "A modern full-stack starter template powered by Next.js",
+  title: "Medicina T126",
+  description: "A modern website for sale",
+  icons: {
+    icon: [
+      {url: "/favicon.ico"},
+      {url: "./images/logomedicina.png", type: "image/png"},
+    ]
+  }
 };
 
 export default function RootLayout({
@@ -18,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <Script src="https://api.tempolabs.ai/proxy-asset?url=https://storage.googleapis.com/tempo-public-assets/error-handling.js" />
+      <Script src="" />
       <body className={inter.className}>
         {children}
         <TempoInit />
