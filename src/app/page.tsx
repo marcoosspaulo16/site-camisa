@@ -1,9 +1,10 @@
 import React from "react";
 import ProductHero from "@/components/ProductHero";
 import camisa1frente from "@/images/camisas_site.zip - off - frente.jpg"
-import camisa1costa from "@/images/camisas_site.zip - off - verso.jpg"
+import camisa1costa2 from "@/images/off-verso2.jpg"
 import camisa3frente from "@/images/azul-frente.jpg"
 import camisa3costa from "@/images/azul-verso.jpg"
+import camisa3costa2 from "@/images/azul-verso2.jpg"
 import { FaLinkedinIn, FaGithub, FaRegGrinTears } from "react-icons/fa";
 import logo from "@/images/logomedicina.png";
 
@@ -31,18 +32,18 @@ export default function Home() {
         color: "off",
       },
       {
-        src: camisa1costa.src,
+        src: camisa1costa2.src,
         alt: "Camisa Off back view",
         color: "off",
       },
       {
         src: camisa3frente.src,
-        alt: "Camisa Verde front view",
+        alt: "Camisa Blue front view",
         color: "azul",
       },
       {
-        src: camisa3costa.src,
-        alt: "Camisa Verde back view",
+        src: camisa3costa2.src,
+        alt: "Camisa Blue back view",
         color: "azul",
       },
       
