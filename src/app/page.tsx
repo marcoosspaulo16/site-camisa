@@ -3,10 +3,11 @@ import ProductHero from "@/components/ProductHero";
 import camisa1frente from "@/images/camisas_site.zip - off - frente.jpg"
 import camisa1costa2 from "@/images/off-verso2.jpg"
 import camisa3frente from "@/images/azul-frente.jpg"
-import camisa3costa from "@/images/azul-verso.jpg"
 import camisa3costa2 from "@/images/azul-verso2.jpg"
 import { FaLinkedinIn, FaGithub, FaRegGrinTears } from "react-icons/fa";
 import logo from "@/images/logomedicina.png";
+// @ts-ignore
+import { Analytics } from "@vercel/analytics/react";
 
 
 export default function Home() {
@@ -142,6 +143,9 @@ export default function Home() {
           </div>
         </div>
       </footer>
+
+      {/* Vercel Analytics */}
+      <Analytics />
     </main>
   );
 }
